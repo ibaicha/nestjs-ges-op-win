@@ -55,6 +55,7 @@ import { TypeSocieteModule } from './structures/type_societe/type_societe.module
 import { DevtoolsModule } from '@nestjs/devtools-integration';
 import { ProduitChargeExploitationModule } from './exploitations/produit_charge_exploitation/produit_charge_exploitation.module';
 import { IdentifiantModule } from './constants/identifiant/identifiant.module';
+import { EventsGateway } from './socket/events/events.gateway';
 
 @Module({
   imports: [
@@ -115,6 +116,7 @@ import { IdentifiantModule } from './constants/identifiant/identifiant.module';
     SocieteModule,
     ProduitChargeExploitationModule,
     IdentifiantModule,
+    EventsGateway,
   ],
   providers: [CampagneService],
   controllers: [],
