@@ -118,7 +118,7 @@ import { EventsGateway } from './socket/events/events.gateway';
     IdentifiantModule,
     EventsGateway,
   ],
-  providers: [CampagneService],
+  providers: [CampagneService,EventsGateway],
   controllers: [],
 })
 export class AppModule {}
