@@ -1,6 +1,7 @@
 import { Exploitation } from '@prisma/client';
 import { IsNotEmpty } from 'class-validator';
 
+
 export class CreateCreditDto {
   @IsNotEmpty()
   readonly date: Date;
